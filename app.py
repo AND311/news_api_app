@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     query = request.args.get("query","latest")
-    url = f"https://newsapi.org/v2/everything?q={query}&language=it&apiKey=8fa5a4dda4cf41549f736ebc451202b6"
+    url = f"https://newsapi.org/v2/everything?q={query}&language=it&sortBy=publishedAt,popularity&apiKey=8fa5a4dda4cf41549f736ebc451202b6"
     response = requests.get(url)
     news_data = response.json()
 
