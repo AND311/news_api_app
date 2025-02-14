@@ -36,14 +36,15 @@
           </li>
         </ul>
         <form class="d-flex ms-auto" role="search" action="/" method="GET">
+          <button class="btn btn-outline-secondary me-2" type="button" data-bs-toggle="modal" data-bs-target="#settingsModal">⚙️</button>
           <input class="form-control me-2" type="search" placeholder="Search" name="query" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
       </div>
     </div>
   </nav>
-
-
+  
+  {% include 'settings.html' %}
 
 <div class="container">
     <h1 class="my-4 text-center">Notizie</h1>

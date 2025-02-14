@@ -18,3 +18,9 @@ flask_news/
 # Ignore system files
 .DS_Store
 Thumbs.db
+
+
+driv/*
+test*
+custom-skill-driv/*
+.vscode/*
